@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inferno Pinger</string>
+    
+    <string name="app_unit_ad_id">ca-app-pub-2191943874002193~4584169152</string>
+    <string name="interstitial_ad_id">ca-app-pub-2191943874002193/5106665917</string>
+    <string name="banner_ad_id">ca-app-pub-2191943874002193/2731723944</string>
+    
+</resources>

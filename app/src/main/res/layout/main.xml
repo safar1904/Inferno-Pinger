@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000000"
+	android:orientation="vertical"
+	android:clickable="true"
+	android:focusable="true"
+	android:focusableInTouchMode="true">
+
+	<RelativeLayout
+		android:layout_height="?attr/actionBarSize"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:id="@+id/action_bar"
+		android:background="@color/darker_green"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/app_name"
+			android:textStyle="bold"
+			android:textColor="#000000"
+			android:layout_centerVertical="true"/>
+
+		<ImageView
+			android:layout_height="45dp"
+			android:layout_width="45dp"
+			android:src="@drawable/satelit"
+			android:scaleType="fitCenter"
+			android:id="@+id/satelit_icon"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:tint="#000000"
+			android:tintMode="src_atop"/>
+
+	</RelativeLayout>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:id="@+id/ip_address"
+		android:singleLine="true"
+		android:textColorHighlight="#7F7F7F"
+		android:typeface="monospace"
+		android:textColor="@color/common_green"
+		android:textStyle="bold"
+		android:background="@drawable/green_border_background"
+		android:padding="10dp"
+		android:gravity="left"
+		android:text="www.example.com"
+		android:layout_margin="5dp"
+		android:layout_marginTop="20dp"
+		android:layout_below="@id/action_bar"
+		android:imeOptions="actionGo"
+		android:selectAllOnFocus="true"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bannerAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="@string/banner_ad_id"
+        ads:adSize="SMART_BANNER">
+    </com.google.android.gms.ads.AdView>
+    
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Start"
+		android:textColor="#27E214"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="false"
+        android:layout_above="@id/bannerAd"
+		android:textStyle="bold"
+		android:typeface="monospace"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/start"/>
+
+	<EditText
+		android:inputType="textMultiLine"
+		android:layout_width="match_parent"
+		android:id="@+id/output"
+		android:ems="10"
+		android:enabled="false"
+		android:layout_height="wrap_content"
+		android:textColor="#1D7D21"
+		android:textIsSelectable="false"
+		android:minLines="10"
+		android:gravity="top"
+		android:background="@drawable/green_border_background"
+		android:layout_below="@id/ip_address"
+		android:layout_above="@id/start"
+		android:layout_margin="5dp"
+		android:padding="10dp"
+		android:typeface="monospace"
+		android:textStyle="bold"
+		android:textSize="12sp"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "125553755709",
+    "firebase_url": "https://inferno-pinger.firebaseio.com",
+    "project_id": "inferno-pinger",
+    "storage_bucket": "inferno-pinger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125553755709:android:ec934faa78a9767d",
+        "android_client_info": {
+          "package_name": "com.xstudio.ddostester"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125553755709-hvro420eopb2ekj8ojqnlkrk1eunvq81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfBOef0pewmGbjhL1LNc9dJEILuQmW8cg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-2191943874002193~4584169152"
+    }
+  ],
+  "configuration_version": "1"
+}
